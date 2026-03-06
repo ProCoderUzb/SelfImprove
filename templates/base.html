@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egov</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            {% if user.picture %}
+            <img src="{{ user.picture.url }}" alt="arc">
+            {% else %}
+            <img src="" alt="arc">
+            {% endif %}
+            <a href="" class="nickname">{{ user.username }}</a>
+        </div>
+        <a href="{% url 'logout' %}" class="logout">Logout</a>
+    </header>
+    {% block content %}
+    
+    {% endblock content %}
+</body>
+</html>

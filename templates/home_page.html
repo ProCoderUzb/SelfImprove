@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egov home</title>
+    <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+</head>
+<header>
+    <p class="slogan">No matter what will happen, I'm going to win</p>
+</header>
+<body>
+    <div class="main">
+        <div class="box">
+            <h3 class="motto">
+                If you have goals, You can't sleep !
+            </h3>
+            {% if user.is_authenticated %}
+                <a href="{% url 'office' %}" class="">Let's go</a>
+            {% else %}
+                <a href="{% url 'login' %}">Find yourself</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

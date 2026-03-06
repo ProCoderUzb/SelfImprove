@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/office_page.css' %}">
+
+<div class="office_page">
+    <div class="main_box">
+        <h1>Life for this month</h1>
+        <div class="type_box">
+            <h2>Mind</h2>
+            <div class="slogans">
+                <p>7 day</p>
+                <p>month: Nov.</p>
+                <p>amount: 14</p>
+            </div>
+        </div>
+        <div class="type_box">
+            <h2>Soul</h2>
+            <div class="slogans">
+                <p>7 day</p>
+                <p>month: Nov.</p>
+                <p>amount: 14</p>
+            </div>
+        </div>
+        <div class="type_box">
+            <h2>Body</h2>
+            <div class="slogans">
+                <p>7 day</p>
+                <p>month: Nov.</p>
+                <p>amount: 14</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="{% url 'acitivities' %}" class="add_action">action +</a>
+            <a href="" class="more_action">more >>></a>
+        </div>
+    </div>
+    <div class="goal_box">
+        <h2>Goals</h2>
+        <div class="goals_list">
+            <h4>IELTS olish</h4>
+            <h4>IELTS olish</h4>
+            <h4>IELTS olish</h4>
+            <h4>IELTS olish</h4>
+        </div>
+        <div class="goal_buttons">
+            <a href="" class="add_goal">Goal +</a>
+            <a href="" class="more_goal">more >>></a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

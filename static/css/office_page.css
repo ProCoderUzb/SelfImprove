@@ -1,0 +1,129 @@
+.office_page {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.main_box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: rgb(99 102 241);
+    /* border: 1px solid black; */
+}
+
+.main_box h1 {
+    color: #000;
+}
+
+.main_box .type_box {
+    border: 3px solid rgb(99 102 241);
+    border-radius: 17px;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.main_box .type_box h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.main_box .type_box .slogans {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main_box .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_box .buttons a {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(99 102 241);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+.main_box .buttons a:hover {
+    background-color: rgba(36, 39, 211, 0.85);
+}
+
+.goal_box {
+    min-width: 20%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(99 102 241);
+}
+.goal_box h2 {
+    font-size: 35px;
+    color: #000;
+    font-weight: 700;
+}
+
+.goal_box .goals_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.goal_box .goals_list h4 {
+    font-size: 20px;
+    width: 80%;
+    border: 3px solid rgb(99 102 241);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.goal_box .goal_buttons {
+    padding-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goal_box .goal_buttons a {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(99 102 241);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+.goal_box .goal_buttons a:hover {
+    background-color: rgba(36, 39, 211, 0.85);
+}
